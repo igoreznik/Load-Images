@@ -99,13 +99,48 @@ li {
    Author's custom styles
    ========================================================================== */
 
-.size {
-    width: 200px;
+body {
+    position: relative;
 }
 
-.thumb li {
-    margin: 5px;
+.container-fluid {
+    width: 100%;
+    background-color: aqua;
+    position: absolute;
+
 }
+
+.content {
+    display: inline-block;
+    width: 80%;
+    background-color: lightgray;
+    position: relative;
+    left: 10%;
+    padding: 15px;
+    min-height: 1200px;
+}
+
+.img-thumbnail {
+    width: 160px;
+    margin: 10px;
+}
+
+.thumb {
+    text-align: center;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.img-thumbnail:hover {
+    transform: scale(1.1);;
+}
+
+button.btn {
+    margin-bottom: 10px;
+}
+
+
 
 
 
@@ -201,8 +236,75 @@ li {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 620px) {
     /* Style adjustments for viewports that meet the condition */
+.content {
+    width: 90%;
+    background-color: lightgray;
+    position: relative;
+    left: 5%;
+    padding: 15px;
+    min-height: 700px;
+}
+
+.img-thumbnail {
+    width: 250px;
+    margin: 15px 0;
+}
+    
+}
+
+@media only screen and (min-width: 620px) and (max-width: 768px) {
+    /* Style adjustments for viewports that meet the condition */
+.content {
+    width: 85%;
+    background-color: lightgray;
+    position: relative;
+    left: 8%;
+    padding: 15px;
+    min-height: 700px;
+}
+
+.img-thumbnail {
+    width: 250px;
+    margin: 15px 15px;
+}
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1192px) {
+    /* Style adjustments for viewports that meet the condition */
+.content {
+    width: 90%;
+    background-color: lightgray;
+    position: relative;
+    left: 5%;
+    padding: 15px;
+    min-height: 1200px;
+}
+
+.img-thumbnail {
+    width: 250px;
+    margin: 15px;
+}
+    
+}
+
+@media only screen and (min-width: 1192px) and (max-width: 1600px) {
+    /* Style adjustments for viewports that meet the condition */
+.content {
+    width: 90%;
+    background-color: lightgray;
+    position: relative;
+    left: 5%;
+    padding: 15px;
+    min-height: 1200px;
+}
+
+.img-thumbnail {
+    width: 190px;
+    margin: 10px;
+}
     
 }
 

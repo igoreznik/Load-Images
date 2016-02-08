@@ -23,16 +23,18 @@
         <!-- Add your site or application content here -->
 
         <div ng-controller="mainController as vm">
-            <div class="container-fluid clearfix">
-                <div class="col-xs-12 col-md-12">
+            <div class="container-fluid">
+                <div class="content">
+                    <button type="button" ng-click="vm.load()" class="btn btn-primary">Load Images</button>
                     <ul class="thumb">
-                        <li ng-repeat="item in vm.img track by $index" class="pull-left">
-                            <img ng-src="{{item}}" alt="" class="img-responsive img-thumbnail size">
+                        <li class="pull-left clearfix">
+                            <img ng-src="{{item}}" alt="" class="img-responsive img-thumbnail" ng-repeat="item in vm.img track by $index">
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
+        
 
 
 
